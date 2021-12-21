@@ -30,7 +30,7 @@ def web_invoke():
     request_id = request.headers.get("X-Scf-Request-Id", "")
     global gColdRun
     time.sleep(3)
-    ret = 'hot||%s' % request_id
+    ret = 'hot1||%s' % request_id
     if gColdRun is None:
         gColdRun = True
         ret = 'cold||%s' % request_id
