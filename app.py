@@ -66,6 +66,6 @@ def lambda_handler(event, context):
     
 if __name__ == '__main__':
     print("aaaaa")
-    os.getenv('TEST_PYTHON')
+    print(os.getenv('TEST_PYTHON'))
     print("aaaaa2")
     app.run(host='0.0.0.0', port=9000)
