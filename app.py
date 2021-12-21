@@ -54,6 +54,7 @@ def handler():
         },
         "body": "hello"
     }
+    print("1111111")
     time.sleep(3)
     return json.dumps(rep)
 
